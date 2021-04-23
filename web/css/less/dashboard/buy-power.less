@@ -1,0 +1,156 @@
+.buy-power {
+  background-color: @color-1;
+  border-radius: 8px;
+  padding: 0 15px;
+  .form-group {
+    margin-bottom: 30px;
+  }
+  .ui-spinner {
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    background-color: lighten(desaturate(spin(@color-3, -0.9087), 7.4797), 37.2549);
+    input {
+      padding: 0 30px 0 10px;
+      margin: 0;
+      width: 100%;
+      font-weight: 700;
+      line-height: 40px;
+      font-size: 14px;
+      color: @color-text;
+      font-family: @font-title;
+      outline: none;
+    }
+    a {
+      z-index: 3;
+      cursor: pointer;
+      border-color: #ededed;
+    }
+  }
+
+}
+
+
+.buy-block-item {
+  background: linear-gradient(-73deg, #2095f5 0%, #27c0f9 100%);
+  border-radius: 8px;
+  padding: 30px 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  .img-block {
+    img {
+      height: 80px;
+      width: auto;
+    }
+  }
+  .hashrate-block {
+    span {
+      color: @color-1;
+      font-family: @font-title;
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+  .buy-title-cur {
+    color: @color-1;
+    font-family: @font-title;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .buy-title-hardware {
+    color: @color-1;
+    font-family: @font-text;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  hr.separate {
+    margin: 30px -5px;
+    border-color: @color-1;
+  }
+  .text-income-title {
+    font-family: @font-title;
+    color: @color-1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .income-usd {
+    font-family: @font-text;
+    color: @color-1;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .income-coin {
+    font-family: @font-text;
+    color: @color-1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+  .exchange_button_wrap {
+    padding: 0 15px;
+  }
+  .exchange_button {
+    font-family: @font-title;
+    color: @color-3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    background-color: @color-1;
+    border: 1px solid @color-1;
+    transition: 0.3s all;
+    &:hover,&:focus {
+      color: @color-1;
+      background-color: transparent;
+    }
+  }
+}
+
+.modal-buy-power {
+  &:not(.loaded) .modal-body{
+  p,label,span,h3,h2 {
+    background: #EDEDF0 !important;
+    color: #EDEDF0 !important;
+    border-radius: 4px;
+    overflow: hidden;
+    &:before {
+      opacity: 0;
+    }
+  }
+  }
+  .answer {
+    .control-label {
+      color: @color-text;
+      font-family: @font-title;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .img-qr-block {
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+    .text-am-cur {
+      color: @color-text;
+      font-family: @font-text;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+}

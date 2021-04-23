@@ -1,0 +1,156 @@
+html,
+body {
+  min-height: 100%;
+  font-family: @font-title;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: @color-2;
+  background-color: @color-1;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+  content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+
+.grid-view th {
+  white-space: nowrap;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+
+.scroll-table {
+  overflow-y: auto;
+  max-height: 360px;
+  &::-webkit-scrollbar {
+    width: 3.5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #E7EAEE;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: @color-3-2;
+    border-radius: 10px;
+  }
+}
+
+.main-btn {
+  border: 1px solid @color-1;
+  border-radius: 2px;
+  color: @color-bg-blocks;
+  transition: 0.3s all;
+  outline: none;
+  text-decoration: none!important;
+  &:hover,&.active,&:focus {
+    background-color: @color-3;
+    color: @color-1;
+    text-decoration: none;
+  }
+}
+
+.back-btn {
+  display: block;
+  color: @color-3!important;
+  font-family: @font-title;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s all;
+  margin-bottom: 10px;
+  &:hover,&:focus {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+.caret {
+  transition: 0.3s transform;
+}
+.open .caret {
+  transform: rotate(180deg);
+}
+
+ul.main-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  >li {
+    position: relative;
+    display: block;
+    float: left;
+    a {
+      position: relative;
+      display: block;
+      color: @color-bg-blocks;
+      font-family: @font-title;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 4px 10px;
+      transition: 0.3s all;
+      text-decoration: none;
+    }
+  }
+  &:before {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+}
+

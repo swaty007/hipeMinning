@@ -1,0 +1,51 @@
+.menu-dashboard {
+  background-color: @color-1;
+  border-radius: 8px;
+
+  .avatar-block {
+    width: 140px;
+    margin: 30px auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .name-text {
+    color: @color-text;
+    font-family: @font-title;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-top: 0;
+    line-height: 21px;
+  }
+  .email-text {
+    color: fade(@color-text, 70%);
+    font-family: @font-text;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 13px;
+  }
+
+  .nav-dashboard-menu {
+    li {
+      a {
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        color: @color-text;
+        font-family: @font-text;
+        padding: 0 0 0 45px;
+        border-left: 5px solid transparent;
+        &.active,&:hover {
+          color: @color-3;
+          border-color: @color-3;
+          background-color: fade( lighten(desaturate(spin(@color-3, -0.9087), 7.4797), 37.2549), 50% );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.transactions-page {
+
+
+    ul.nav-main {
+
+      padding-left: 0;
+      margin-bottom: 20px;
+      list-style: none;
+      li {
+        position: relative;
+        a {
+          position: relative;
+          display: block;
+          padding: 10px 15px;
+          font-family: @font-text;
+          border-radius: 0;
+        }
+      }
+    }
+
+
+  label {
+    font-family: @font-text;
+  }
+  table {
+    tbody {
+      font-family: @font-text;
+      tr {
+        td {
+          &:nth-child(1),&:nth-child(5),&:nth-child(6) {
+            font-family: @font-text;
+          }
+          &.deposit {
+            background-color: @brand-info!important;
+            color:@color-1;
+            font-weight: 600;
+          }
+            &.mining {
+            background-color: lighten(@brand-success,10%)!important;
+              //color:@color-1;
+              font-weight: 600;
+          }
+          &.referal {
+            background-color: @brand-warning!important;
+            color:@color-1;
+            font-weight: 600;
+          }
+          &.deposit {
+            background-color: lighten(@brand-primary,5%)!important;
+            //color:@color-1;
+            font-weight: 600;
+          }
+          &.withdraw {
+            background-color: lighten(@brand-danger,10%)!important;
+            //color:@color-1;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

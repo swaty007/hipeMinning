@@ -1,0 +1,92 @@
+.dashboard-wrap {
+  background-color: @color-bg-dashboard;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.panel-title {
+  color: @color-text;
+  font-family: @font-title;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.main-label {
+  color: @color-text;
+  font-family: @font-title;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 10px;
+  &.mar-bot {
+    @media(min-width:992px) {
+      margin-bottom: 35px;
+    }
+  }
+}
+.main-input {
+  background-color: lighten(desaturate(spin(@color-3, -0.9087), 7.4797), 37.2549);
+  padding: 0 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 14px;
+  color: @color-text;
+  font-family: @font-title;
+  border: none;
+  width: 100%;
+}
+
+.form-copy-text {
+  background-color: #EDEDF0;
+  color: @color-text;
+  font-family: @font-text;
+  font-weight: 500;
+  word-wrap: break-word;
+  line-height: 20px;
+  padding: 10px 60px 10px 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  text-overflow: ellipsis;
+  min-height: 40px;
+  margin-bottom: 20px;
+  &:before {
+    content: '';
+    background-color: transparent;
+    background-image: url(../../../images/icon/ic_copy.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+select.main-select {
+  width: 100%;
+  font-family: @font-title;
+  color: @color-text;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px 0 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  background-color: lighten(desaturate(spin(@color-3, -0.9087), 7.4797), 37.2549);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-image: url(../../../images/icon/ic_picker.svg);
+
+}

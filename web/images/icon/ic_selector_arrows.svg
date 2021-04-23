@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_selector_arrows</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5" stroke-linecap="round" stroke-linejoin="round">
+        <g id="0.01-login" transform="translate(-769.000000, -905.000000)" stroke="#9B9B9B" stroke-width="1.5">
+            <g id="Group-2" transform="translate(650.000000, 899.000000)">
+                <g id="ic_selector_arrows" transform="translate(114.000000, 4.000000)">
+                    <polyline id="Path-2" points="6 7 10 3 14 7"></polyline>
+                    <polyline id="Path-2" transform="translate(10.000000, 15.000000) scale(1, -1) translate(-10.000000, -15.000000) " points="6 17 10 13 14 17"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
